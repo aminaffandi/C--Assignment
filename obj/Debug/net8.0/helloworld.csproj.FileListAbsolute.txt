@@ -1,0 +1,14 @@
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/bin/Debug/net8.0/helloworld
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/bin/Debug/net8.0/helloworld.deps.json
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/bin/Debug/net8.0/helloworld.runtimeconfig.json
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/bin/Debug/net8.0/helloworld.dll
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/bin/Debug/net8.0/helloworld.pdb
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.AssemblyInfoInputs.cache
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.AssemblyInfo.cs
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.csproj.CoreCompileInputs.cache
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.dll
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/refint/helloworld.dll
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.pdb
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.genruntimeconfig.cache
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/ref/helloworld.dll
