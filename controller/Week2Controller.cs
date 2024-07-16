@@ -1,48 +1,45 @@
+using System.Globalization;
 using System.Linq.Expressions;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
+using System.Xml.XPath;
 using helloworld.models;
 
 namespace helloworld.controller{
     public class Week2Controller {
-        // public void cns_output (Week2Model cns){
-        //     int cns_count = cns.CnS;
-            
-        // }
-
-        public string cns_output(Week2Model cns)
-        {
+        public string cns_output (Week2Model cns){
             int cns_count = cns.CnS;
-            if (cns_count <= 0) return "";
-
+            if (cns_count <= 0){
+                return "";
+            }
             string result = "1";
-            for (int i = 1; i < cns_count; i++)
-            {
+            for (int i = 0; i<cns_count; i++){
                 result = NextSequence(result);
             }
-
             return result;
         }
 
-        private static string NextSequence(string s)
-        { // 1, 11, 21, 1211, 111221,
-            // use stringbuilder
-            StringBuilder nextSequence = new StringBuilder();
-
-            // loop thru current string length starting from 0
-            for (int i = 0; i < s.Length; i++)
-            {
-                // create counter as character
-                int count = 1;
-                while (i + 1 < s.Length && s[i] == s[i + 1])
-                {
-                    count++;
+        public static string NextSequence(string seq){
+            // 1, 11, 21, 1211, 111221,
+            StringBuilder nextseq = new StringBuilder();
+            List<string> seqList = new List<string>();
+            //loop thru each index
+            for (int i = 0; i<seq.Length; i++){
+                int counter = 1;
+                // loop thru each character
+                while (i + 1 < seq.Length && seq[i] == seq[i+1]){
+                    counter++;
                     i++;
                 }
-                nextSequence.Append(count.ToString() + s[i]);
+                // counter = pronounciation (how many n), seq[i] is the value
+                nextseq.Append(counter.ToString()+seq[i]);
+                seqList.Add(counter.ToString()+seq[i]);
             }
 
-            return nextSequence.ToString();
+            // Print each element in seqList
+            Console.WriteLine($"[{string.Join(", ",seqList)}]");
+
+            return nextseq.ToString();
         }
 
         public void star_output(Week2Model star){
