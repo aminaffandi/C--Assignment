@@ -12,3 +12,4 @@
 /Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.pdb
 /Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.genruntimeconfig.cache
 /Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/ref/helloworld.dll
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.sourcelink.json
