@@ -1,6 +1,8 @@
 ﻿using System;
 using helloworld.models;
 using helloworld.controller;
+using System.ComponentModel;
+using System.Diagnostics.Tracing;
 
 class Program{
     static void Main (string [] args){
@@ -18,6 +20,10 @@ class Program{
             case "week2":
                 System.Console.WriteLine("Week 2 Assignment");
                 Week2Assignment();
+                break;
+            case "week3":
+                System.Console.WriteLine("Week 3 Assignment");
+                Week3Assignment();
                 break;
             default:
                 System.Console.WriteLine("Invalid input given");
@@ -71,5 +77,38 @@ class Program{
         Console.WriteLine($"The {n}th sequence in the count-and-say sequence is: {result}");
         System.Console.WriteLine("Diamond:");
         controller.star_output(input);
+    }
+
+    static void Week3Assignment(){
+        System.Console.Write("Enter first number: ");
+        string s0 = Console.ReadLine();
+        int n0 = int.Parse(s0);
+        System.Console.Write("Enter second number: ");
+        string s1 = Console.ReadLine();
+        int n1 = int.Parse(s1);
+        System.Console.Write("Enter third number: ");
+        string s2 = Console.ReadLine();
+        int n2 = int.Parse(s2);
+        System.Console.Write("Enter fourth number: ");
+        string s3 = Console.ReadLine();
+        int n3 = int.Parse(s3);
+        System.Console.Write("Enter target output: ");
+        string output = Console.ReadLine();
+        int target = int.Parse(output);
+
+        int [] numbers = {n0, n1, n2, n3};
+
+        Week3Model Numbers = new Week3Model();
+        Numbers.inputArray = numbers;
+        Numbers.Target = target;
+
+        string display = string.Join(", ", Numbers.inputArray);
+        System.Console.WriteLine($"( {display} )");
+
+        Week3Controller controller = new Week3Controller();
+        // controller function
+        string result = controller.targetOutput(Numbers.inputArray, Numbers.Target);
+        System.Console.WriteLine(result);
+
     }
 }
