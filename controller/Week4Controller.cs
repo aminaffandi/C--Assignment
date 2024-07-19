@@ -5,45 +5,6 @@ namespace helloworld.controller{
     public class Week4Controller{
         Week4Model student = new Week4Model();
 
-        // public string er (string path) {
-        //     string filePath = path;
-
-        //     // Check if the file exists
-        //     if (!File.Exists(filePath)){
-        //         Console.WriteLine($"File not found: {filePath}");
-        //         return;
-        //     }
-        //     return filePath
-
-
-        //     // Load Excel package
-        //     using (var package = new ExcelPackage(new FileInfo(filePath)))
-        //     {
-        //         ExcelWorksheet worksheet = package.Workbook.Worksheets[0]; // Assuming it's the first sheet
-
-        //         int rowCount = worksheet.Dimension.Rows;
-        //         int colCount = worksheet.Dimension.Columns;
-
-        //         Console.WriteLine($"Reading {rowCount} rows and {colCount} columns from Excel:");
-
-        //         // Assuming the first row is header
-        //         for (int row = 2; row <= rowCount; row++) // Start from row 2 assuming row 1 is header
-        //         {
-        //             string studentName = worksheet.Cells[row, 1].Value?.ToString(); // Column 1 for student name
-        //             double score = 0;
-        //             if (double.TryParse(worksheet.Cells[row, 2].Value?.ToString(), out score)) // Column 2 for score
-        //             {
-        //                 Console.WriteLine($"Student: {studentName}, Score: {score}");
-        //                 // You can process the data here, such as storing it in a list or database
-        //             }
-        //             else
-        //             {
-        //                 Console.WriteLine($"Invalid score format in row {row}");
-        //             }
-        //         }
-        //     }
-        // }
-
         public ExcelPackage LoadExcel (string filePath){
             // Check if the file exists
             if (!File.Exists(filePath))
