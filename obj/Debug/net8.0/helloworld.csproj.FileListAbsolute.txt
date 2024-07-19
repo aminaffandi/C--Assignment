@@ -33,3 +33,4 @@
 /Users/aminaffandi/Documents/Personal/training/csharp/helloworld/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
 /Users/aminaffandi/Documents/Personal/training/csharp/helloworld/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll
 /Users/aminaffandi/Documents/Personal/training/csharp/helloworld/obj/Debug/net8.0/helloworld.csproj.Up2Date
+/Users/aminaffandi/Documents/Personal/training/csharp/helloworld/bin/Debug/net8.0/Newtonsoft.Json.dll

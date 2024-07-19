@@ -3,6 +3,7 @@ using helloworld.models;
 using helloworld.controller;
 using System.ComponentModel;
 using System.Diagnostics.Tracing;
+using Newtonsoft.Json;
 
 class Program{
     static void Main (string [] args){
@@ -28,6 +29,10 @@ class Program{
             case "week4":
                 System.Console.WriteLine("Week 4 Assignment");
                 Week4Assignment();
+                break;
+            case "week5":
+                System.Console.WriteLine("Week 5 Assignment");
+                Week5Assignment();
                 break;
             default:
                 System.Console.WriteLine("Invalid input given");
@@ -129,5 +134,14 @@ class Program{
         System.Console.WriteLine();
         controller.getTopThreeStudent(excel);
         System.Console.WriteLine();
+    }
+
+    static void Week5Assignment(){
+        Week5Controller controller = new Week5Controller();
+        string filePath = "./assets/students.json";
+        controller.DisplayStudent(filePath);
+        controller.AddStudent(filePath, "Hazim", "Male", 40);
+        // controller.RemoveStudent(filePath, "Hazim");
+        controller.EditStudentScore(filePath, "Hazim", 100);
     }
 }
