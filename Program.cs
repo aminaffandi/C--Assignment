@@ -25,6 +25,10 @@ class Program{
                 System.Console.WriteLine("Week 3 Assignment");
                 Week3Assignment();
                 break;
+            case "week4":
+                System.Console.WriteLine("Week 4 Assignment");
+                Week4Assignment();
+                break;
             default:
                 System.Console.WriteLine("Invalid input given");
                 break;
@@ -110,5 +114,20 @@ class Program{
         string result = controller.targetOutput(Numbers.inputArray, Numbers.Target);
         System.Console.WriteLine(result);
 
+    }
+
+    static void Week4Assignment(){
+        // dotnet add package EPPlus --version 5.6.3
+        string FilePath = "./assets/students.xlsx";
+        Week4Controller controller = new Week4Controller();
+        var excel = controller.LoadExcel(FilePath);
+        controller.getName(excel);
+        System.Console.WriteLine();
+        controller.getStudentScore(excel);
+        System.Console.WriteLine();
+        controller.getPerformStudent(excel);
+        System.Console.WriteLine();
+        controller.getTopThreeStudent(excel);
+        System.Console.WriteLine();
     }
 }
